@@ -69,7 +69,8 @@ void player_turn()
 
 bool gameover()
 {
-	for(int i=0; i<3; i++)
+    
+    for(int i=0; i<3; i++)
     if(arr[i][0] == arr[i][1] && arr[i][0] == arr[i][2] || arr[0][i] == arr[1][i] && arr[0][i] == arr[2][i])
     return false;
 
@@ -90,7 +91,8 @@ bool gameover()
 }
 main()
 {
-	    cout<<"\n\n    Tic  Tac  Toi Game"<<endl;
+	
+ 	cout<<"\n\n    Tic  Tac  Toi Game"<<endl;
         while(gameover())
             {
 	            display();
