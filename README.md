@@ -11,8 +11,8 @@ bool draw =false;
 
 void display()
 {
-	system("cls");
 	
+ 	system("cls");
 	cout<<"\t Player1 [X] \n\t Player2 [O]\n\n";
 	cout<<"\t\t     |     |     \n";
 	cout<<"\t\t"<<  arr[0][0] <<"    | "<< arr[0][1]<<"   |  "<<arr[0][2]<<" \n";
