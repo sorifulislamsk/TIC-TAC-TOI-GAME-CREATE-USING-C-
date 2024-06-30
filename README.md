@@ -1,16 +1,15 @@
 # TIC-TAC-TOI-GAME-CREATE-USING-C++
 
-#include<iostream>
-using namespace std;
-
-char arr[3][3]={'1','2','3','4','5','6','7','8','9'};
-char turn ='X';
-int row,column;
-bool draw =false;
-
-
-void display()
-{
+ 	#include<iostream>
+	 using namespace std;
+ 
+ 	char arr[3][3]={'1','2','3','4','5','6','7','8','9'};
+	 char turn ='X';
+	 int row,column;
+	 bool draw =false;
+ 
+ 	void display()
+	{
 	
  	system("cls");
 	cout<<"\t Player1 [X] \n\t Player2 [O]\n\n";
@@ -23,12 +22,12 @@ void display()
 	cout<<"\t\t-----|-----|-----\n";
 	cout<<"\t\t"<<  arr[2][0] <<"    | "<< arr[2][1]<<"   |  "<<arr[2][2]<< "\n";
     cout<<"\t\t     |     |     \n";
-}
+	}
 
-void player_turn()
-{
-	int choice;
+	void player_turn()
+	{
 	
+ 	int choice;
 	if(turn =='X')
 	cout<<"\n\tPlayer1 [X] Turn : ";
 	else if(turn =='O')
@@ -65,10 +64,10 @@ void player_turn()
 		player_turn();
 		}
 		display();
-}
+	}
 
-bool gameover()
-{
+	bool gameover()
+	{
     
     for(int i=0; i<3; i++)
     if(arr[i][0] == arr[i][1] && arr[i][0] == arr[i][2] || arr[0][i] == arr[1][i] && arr[0][i] == arr[2][i])
@@ -88,9 +87,9 @@ bool gameover()
     //Checking the if game already draw
     draw = true;
     return false;
-}
-main()
-{
+	}
+	main()
+	{
 	
  	cout<<"\n\n    Tic  Tac  Toi Game"<<endl;
         while(gameover())
@@ -107,4 +106,4 @@ main()
 
     else cout<<"Game Draw!!"<<endl;	
 	
-}
+	}
